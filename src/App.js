@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Spell from './type/Spell';
+import SpellListDisplay from './components/SpellListDisplay';
 
 function App() {
+  let spellsToDisplay= [{name:"name", level:"level"}]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SpellListDisplay displaySpells={spellsToDisplay}/>
     </div>
   );
 }

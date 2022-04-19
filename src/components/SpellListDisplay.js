@@ -1,9 +1,9 @@
 import Spell from "../type/Spell";
 
-const SpellListDisplay  = ({...displaySpells}:Array<Spell>) : JSX.Element => {
+const SpellListDisplay  = ({...displaySpells}) => {
     return (
         <div>
-            {displaySpells}
+            {displaySpells[0].name}
         </div>
     );
 }
