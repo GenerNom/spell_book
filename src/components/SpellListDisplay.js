@@ -1,9 +1,14 @@
-import Spell from "../type/Spell";
+import IndividualSpellDisplay from "./IndividualSpellDisplay";
 
-const SpellListDisplay  = ({...displaySpells}) => {
+const SpellListDisplay  = ({displaySpells}) => {
+    const Spells = ({spellList}) => {
+        return spellList.map((spell) => {
+            return <IndividualSpellDisplay spell={spell} key={spell.name} />
+        })
+    }
     return (
-        <div>
-            {displaySpells[0].name}
+        <div id="DisplayList">
+                {<Spells spellList={displaySpells}/>}
         </div>
     );
 }

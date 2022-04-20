@@ -1,0 +1,2 @@
+[{"name":"name", "level":"level","class": ["fistClass1", "secondClass1"], "castingTime": "time1", "range": "range1", "components": "components1", "duration": "duration1", "description":"discription1", "source": "source1"},
+{"name":"name2", "level":"level2", "class": ["fistClass1", "secondClass1"], "castingTime": "time2", "range": "range2", "components": "components2", "duration": "duration2", "description":"discription2", "source": "source3"}]
