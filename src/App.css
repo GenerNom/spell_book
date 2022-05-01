@@ -1,0 +1,22 @@
+.show{
+    display: none;
+}
+.header{
+    display: flex;
+    border-bottom: 1px inset grey;
+}
+.toggle{
+    position: absolute;
+    left: 90%;
+}
+.spellName{
+    padding-right: 70px;
+}
+.displaySpell{
+    border: 1px inset black ;
+    width: 98%;
+    margin-left: 1%;
+}
+.smallText{
+    font-size:x-small ;
+}

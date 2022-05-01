@@ -1,7 +1,7 @@
 import IndividualSpellDisplay from "./IndividualSpellDisplay";
 
 const SpellListDisplay  = ({displaySpells}) => {
-    const Spells = ({spellList}) => {
+    const Spells = ({spellList}) => {    
         return spellList.map((spell) => {
             return <IndividualSpellDisplay spell={spell} key={spell.name} />
         })
