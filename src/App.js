@@ -25,10 +25,13 @@ function App() {
   }
   return (
     <div className="App">
-      Spell Name: <input type="text" ref={nameFilter} /> Only Rituals: <input type="checkbox" id="ritualCheckbox" /><br/>
-      Class: <input type="text" ref={classFilter} /> Level: <input type="text" ref={levelFilter} /> <br/>
-
-      <button onClick={()=>applyFilters(allSpells.spells)}>Filter</button>
+      <div className="filter">
+        <div className="filterOptions">
+        Spell Name: <input type="text" ref={nameFilter} /> Only Rituals: <input type="checkbox" id="ritualCheckbox" /><br/>
+        Class: <input type="text" ref={classFilter} /> Level: <input type="text" ref={levelFilter} /> 
+        </div>
+        <div className="filterButton"><button onClick={()=>applyFilters(allSpells.spells)}>Filter</button></div>
+      </div>
       <SpellListDisplay displaySpells={spellsToDisplay}/>
     </div>
   );
