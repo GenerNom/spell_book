@@ -2,6 +2,9 @@
     font-family: "magic";
     src: url(../MagicSchoolOne.ttf);
 }
+.App{
+    background-color: #c99deb;
+}
 .show{
     display: none;
 }
@@ -32,6 +35,7 @@
 }
 .filterOptions{
     width: 80%;
+    margin-left: 1%;
 }
 .filterButton{
     height: 100%;
@@ -50,11 +54,17 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+.marginDownLow{
+    margin-top: 2px;
+    margin-bottom: .75%;
+}
 input[type=checkbox] {
     transform: scale(1.5);
+    accent-color: #5f00a8;
 }
 input[type=text] {
     transform: scale(1.2);
     margin-left: 3%;
     margin-right: 3%;
+    background-color: #d0b8e3;
 }
